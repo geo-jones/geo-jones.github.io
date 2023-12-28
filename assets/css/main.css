@@ -207,6 +207,7 @@ a {
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	color: #29648a;
 	text-decoration: none;
+	/* font-weight: bold; */
 }
 
 a:hover {
@@ -238,7 +239,7 @@ h4,
 h5,
 h6 {
 	color: #29648a;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 }
@@ -2170,7 +2171,7 @@ a.icon {
 	display: block;
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.1;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -2186,7 +2187,7 @@ a.icon {
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	border-radius: 0.35em;
-	border: solid 3px #464866;
+	border: solid 3px #fff;
 	color: #fff;
 	content: 'View';
 	display: inline-block;
@@ -2766,6 +2767,7 @@ input[type="button"]:disabled,
 	font-size: 1.35em;
 	line-height: 1.75em;
 	margin: 0;
+	font-weight: 400;
 }
 
 #header .image.avatar {
@@ -2989,7 +2991,7 @@ input[type="button"]:disabled,
 
 .poptrox-popup .nav-next:before,
 .poptrox-popup .nav-previous:before {
-	color: #fff;
+	color: #29648a;
 	font-size: 2.5em;
 	height: 1em;
 	line-height: 1em;
@@ -3025,7 +3027,7 @@ input[type="button"]:disabled,
 	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	color: #fff;
+	color: #29648a;
 	height: 4em;
 	line-height: 4em;
 	opacity: 0;
@@ -3056,7 +3058,7 @@ input[type="button"]:disabled,
 	-ms-box-sizing: content-box;
 	box-sizing: content-box;
 	border-radius: 100%;
-	border: solid 3px #464866;
+	border: solid 3px #29648a;
 	content: '\f00d';
 	display: block;
 	font-size: 1em;
@@ -3362,14 +3364,14 @@ body.is-touch .poptrox-popup .closer {
 
 .work-item p.icon.solid.awards {
 	/* font-style: italic; */
-	font-size: 8pt;
-	color: #8A4F29;
+	font-size: 0.7em;
+	color: #8a6b29;
 }
 
 .work-item p.icon.solid.skills {
 	/* font-style: italic; */
-	font-size: 8pt;
-	color: #338A29;
+	font-size: 0.7em;
+	color: #298a2c;
 }
 
 .work-item hr {
@@ -3381,4 +3383,8 @@ body.is-touch .poptrox-popup .closer {
 
 .work-item p {
 	padding-top: 1em;
+}
+
+.work-item a {
+	font-weight: bold;
 }
