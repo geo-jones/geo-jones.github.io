@@ -1,15 +1,23 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
+
+/* colors
+F8F9F7
+A29DBE
+79789B
+7887A6
+362E6F 
+*/
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    /* background-color: #f8f9fa; */
-    background-color: hsl(213, 24%, 16%);
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Center website */
@@ -19,48 +27,86 @@ body {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
-h1 {
-    /* color: #1f2833; */
-    color: #5F8BA7;
+.content {
+    padding: min(5rem, 4%);
+    padding-left: min(10rem, 8%);
+    padding-right: min(10rem, 8%);
 
-    font-weight: 100;
-    font-size: 2rem;
-    word-break: break-all;
 }
 
+.top {
+    background-color: #201c3f;
+    background-size: 100% 100%;
+    min-height: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+
+}
+
+h1 {
+    color: #F8F9F7;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.gallery h1 {
+    color: #362e6f;
+}
+
+
 h2 {
-    /* color: #1f2833; */
-    color: hsl(203, 29%, 51%);
+    color: #F8F9F7;
     font-weight: 100;
     font-size: 1.5rem;
 
 }
 
-p,
-ul {
-    /* color: #29648a; */
-    color: hsl(236, 9%, 69%);
-    font-weight: 100;
-    font-size: 1rem;
-
+hr {
+    width: 50rem;
+    height: 0.1rem;
+    color: #A29DBE;
+    background-color: #A29DBE;
+    border-width: 0;
+    margin-left: 0;
 }
 
-.gallery img {
+p {
+    color: #A29DBE;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+
+.top p {
+    color: #A29DBE;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.gallery {
+    background-color: #362e6f;
+    background-size: 100% 100%;
+}
+
+img {
     /* box-shadow: 0 0.25rem 0.5rem 0 rgba(115, 208, 254, 0.2), 0 0.35rem 1.25rem 0 rgba(115, 208, 254, 0.19); */
     box-shadow:
-        1px 2px 2px hsla(237, 29%, 63%, 0.2),
-        2px 4px 4px hsla(237, 29%, 63%, 0.2),
-        4px 8px 8px hsla(237, 29%, 63%, 0.2),
-        6px 12px 12px hsla(237, 29%, 63%, 0.2);
+        1px 2px 2px #F8F9F733,
+        2px 4px 4px #F8F9F733,
+        4px 8px 8px #F8F9F733,
+        6px 12px 12px #F8F9F733;
     /* 16px 32px 32px hsl(220deg 60% 50% / 0.2); */
-    border-radius: 0.45rem;
+    border-radius: 0.25rem;
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
     transition: ease-in-out 300ms;
-
     &:hover {
         opacity: 0.5;
     }
@@ -76,8 +122,8 @@ ul {
 .row hr {
     width: 8rem;
     height: 0.2rem;
-    color: #29648a;
-    background-color: #29648a;
+    color: #79789B;
+    background-color: #79789B;
     text-align: left;
     border-width: 0;
     margin-left: 0;
@@ -103,30 +149,31 @@ ul {
 }
 
 /* Content */
-.content {
-    background-color: #1f2833;
+.gallery-content {
+    background-color: #362e6f;
     padding: 10px;
 }
 
-.content h3 {
-    color: #aaabb8;
+h3 {
+    /* font-family: "Roboto Slab", "Times New Roman", serif; */
+    color: #F8F9F7;
     font-weight: 100;
-    font-size: 1.5rem;
-}
-
-.content p {
-    /* color: #29648a; */
-    color: #aaabb8;
-    font-weight: 100;
-
+    font-size: 1.4rem;
 }
 
 /* iframe */
 
 iframe {
-    width: 80%;
+    width: 90%;
     height: 85%;
     border: none;
+    box-shadow:
+        1px 2px 2px #362e6f33,
+        2px 4px 4px #362e6f33,
+        4px 8px 8px #362e6f33,
+        6px 12px 12px #362e6f33;
+    /* 16px 32px 32px hsl(220deg 60% 50% / 0.2); */
+    border-radius: 0.25rem;
 
 }
 
@@ -167,22 +214,58 @@ a.icon {
 
 .icon.solid:before {
     font-weight: 100;
+    padding-right: 0.5rem;
 }
 
 .icon.brands:before {
     font-family: FontAwesome;
 }
 
-p.icon.solid.skills {
-    color: #5F8BA7;
+p.icon {
+    color: #7887A6;
     font-size: 1rem;
 }
 
-p.icon.solid.awards {
-    color: #ffe28b;
-    font-size: 1rem;
+.icon.fa-trophy {
+    color: gold;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #F8F9F7;
+}
+
+a:visited {
+    text-decoration: none;
+    color: none;
+}
+
+.button {
+    border: 0;
+    line-height: 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #F8F9F7;
+    border-radius: 0.25rem;
+    background-color: #79789B;
+}
+
+.button:hover {
+    background-color: #A29DBE;
+    color: #F8F9F7;
+}
+
+.button:active {
+    box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+  
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
     .column {
