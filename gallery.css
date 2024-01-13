@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
 
-/* colors
-F8F9F7
-A29DBE
-79789B
-7887A6
-362E6F 
-*/
+:root {
+    --bg: #f4f9fc;
+    --line: #7f00e0;
+    --fill: #73bbc5;
+    --text: #0f1b61;
+    --subtext: #73bbc5;
+    --duo: #73bbc5;
+}
 
 * {
     box-sizing: border-box;
@@ -24,7 +25,8 @@ body {
 .main {
     max-width: 1800px;
     margin: auto;
-    font-family: "Roboto", Helvetica, sans-serif;
+    /* font-family: "Roboto", Helvetica, sans-serif; */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
 .content {
@@ -35,7 +37,7 @@ body {
 }
 
 .top {
-    background-color: #201c3f;
+    background-color: #0f1b61;
     background-size: 100% 100%;
     min-height: 100%;
     vertical-align: middle;
@@ -46,18 +48,22 @@ body {
 }
 
 h1 {
-    color: #F8F9F7;
+    /* font-family: Bitter,serif; */
+    color: #73bbc5;
     font-weight: 100;
     font-size: 2rem;
 }
 
 .gallery h1 {
-    color: #362e6f;
+    /* font-family: Bitter,serif; */
+    font-weight: 500;
+    color: #0f1b61;
 }
 
 
 h2 {
-    color: #F8F9F7;
+    /* font-family: Bitter,serif; */
+    color: #73bbc5;
     font-weight: 100;
     font-size: 1.5rem;
 
@@ -72,8 +78,8 @@ hr {
     margin-left: 0;
 }
 
-p {
-    color: #A29DBE;
+p, li {
+    color: #0f1b61;
     font-weight: 100;
     font-size: 1rem;
     line-height: 1.4rem;
@@ -81,25 +87,18 @@ p {
 
 
 .top p {
-    color: #A29DBE;
+    color: #f4f9fc;
     font-weight: 100;
     font-size: 1rem;
     line-height: 1.4rem;
 }
 
 .gallery {
-    background-color: #362e6f;
+    background-color: #f4f9fc;
     background-size: 100% 100%;
 }
 
 img {
-    /* box-shadow: 0 0.25rem 0.5rem 0 rgba(115, 208, 254, 0.2), 0 0.35rem 1.25rem 0 rgba(115, 208, 254, 0.19); */
-    box-shadow:
-        1px 2px 2px #F8F9F733,
-        2px 4px 4px #F8F9F733,
-        4px 8px 8px #F8F9F733,
-        6px 12px 12px #F8F9F733;
-    /* 16px 32px 32px hsl(220deg 60% 50% / 0.2); */
     border-radius: 0.25rem;
     width: 100%;
     display: block;
@@ -123,7 +122,7 @@ img {
     width: 8rem;
     height: 0.2rem;
     color: #79789B;
-    background-color: #79789B;
+    background-color: #f4f9fc;
     text-align: left;
     border-width: 0;
     margin-left: 0;
@@ -150,14 +149,13 @@ img {
 
 /* Content */
 .gallery-content {
-    background-color: #362e6f;
+    background-color: #f4f9fc;
     padding: 10px;
 }
 
 h3 {
-    /* font-family: "Roboto Slab", "Times New Roman", serif; */
-    color: #F8F9F7;
-    font-weight: 100;
+    color: #0f1b61;
+    font-weight: 600;
     font-size: 1.4rem;
 }
 
@@ -167,13 +165,16 @@ iframe {
     width: 90%;
     height: 85%;
     border: none;
-    box-shadow:
-        1px 2px 2px #362e6f33,
-        2px 4px 4px #362e6f33,
-        4px 8px 8px #362e6f33,
-        6px 12px 12px #362e6f33;
-    /* 16px 32px 32px hsl(220deg 60% 50% / 0.2); */
     border-radius: 0.25rem;
+    margin-bottom: 0.6rem;
+}
+
+iframe, img {
+    box-shadow:
+    1px 2px 2px #0f1b6133,
+    2px 4px 4px #0f1b6133,
+    4px 8px 8px #0f1b6133,
+    6px 12px 12px #0f1b6133;
 
 }
 
@@ -219,25 +220,50 @@ a.icon {
 
 .icon.brands:before {
     font-family: FontAwesome;
+    /* color: #73bbc5; */
+
 }
 
 p.icon {
-    color: #7887A6;
+    color: #7f00e0;
     font-size: 1rem;
 }
 
-.icon.fa-trophy {
-    color: gold;
+/* .icon.fa-trophy:before {
+    color: #7f00e0;
 }
+
+.icon.fa-screwdriver-wrench:before {
+    color: #7f00e0;
+} */
 
 a {
-    text-decoration: none;
+    position: relative;
     color: inherit;
-}
-
-a:hover {
-    color: #F8F9F7;
-}
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #73bbc5;
+  }
+  
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #73bbc5;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
 
 a:visited {
     text-decoration: none;
@@ -250,14 +276,18 @@ a:visited {
     padding: 1rem;
     font-size: 1rem;
     text-align: center;
-    color: #F8F9F7;
+    color: #f4f9fc;
     border-radius: 0.25rem;
-    background-color: #79789B;
+    background-color: #7f00e0;
+    text-decoration: none;
+
 }
 
 .button:hover {
-    background-color: #A29DBE;
-    color: #F8F9F7;
+    background-color: #748CDB;
+    color: #f4f9fc;
+    text-decoration: none;
+
 }
 
 .button:active {
