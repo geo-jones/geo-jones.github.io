@@ -121,14 +121,6 @@ ul {
     color: #F8F9F7;
 }
 
-.skills p {
-    color: #778899;
-    /* font-size: 0.9rem; */
-    /* color: #7887A6; */
-    /* font-family: 'Roboto', sans-serif; */
-
-}
-
 img {
     border-radius: 0.25rem;
     width: 100%;
@@ -231,17 +223,25 @@ a.icon {
     display: none;
 }
 
-/* .icon.fa-trophy {
-    color: gold;
-} */
+.awards {
+    margin-top: 1rem;
+    /* color: #4b4b4b; */
+}
 
 .fa-map {
     color: #778899;
 }
 
-.icon.rotate {
-    font-size: 1.5rem;
-    transform: rotate(45deg) translate(0.3rem, 0rem);
+.skills-border {
+    color: #044317;
+    background-color: #A7F0BA;
+    border: 0;
+    line-height: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    text-decoration: none;
 }
 
 .link-hover {
@@ -250,13 +250,20 @@ a.icon {
 
 }
 
+.icon.arrow {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
 .link-hover:hover {
-    letter-spacing: 0.05rem;
+    /* letter-spacing: 0.05rem; */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
     transition: all .2s cubic-bezier(.25, .46, .45, .94);
 }
 
-.link-hover:hover>.icon.rotate {
-    transform: rotate(45deg) translate(0.3rem, -0.5rem);
+.link-hover:hover>.icon.arrow {
+    transform: translate(0.5rem, 0rem);
 }
 
 .contact {
