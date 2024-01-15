@@ -1,13 +1,14 @@
 @import url("fontawesome-all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto&family=Roboto+Serif:opsz@8..144&display=swap');
 
-/* colors
-F8F9F7
-A29DBE
-79789B
-7887A6
-362E6F 
-*/
+:root {
+    --bg: #f4f9fc;
+    --line: #7f00e0;
+    --fill: #73bbc5;
+    --text: #0f1b61;
+    --subtext: #73bbc5;
+    --duo: #73bbc5;
+}
 
 * {
     box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
 }
 
 .top {
-    background-color: #201c3f;
+    background-color: #0f1b61;
     background-size: 100% 100%;
     min-height: 70%;
     vertical-align: middle;
@@ -66,7 +67,9 @@ h1 {
 }
 
 .gallery h1 {
-    color: #362e6f;
+    /* font-family: Bitter,serif; */
+    font-weight: 500;
+    color: #0f1b61;
 }
 
 .gallery h2 {
@@ -269,7 +272,13 @@ a.icon {
     color: #A29DBE;
 }
 
+.icon.fa-screwdriver-wrench:before {
+    color: #7f00e0;
+} */
+
 a {
+    position: relative;
+    color: inherit;
     text-decoration: none;
     color: inherit;
 }
@@ -299,14 +308,18 @@ a:visited {
     padding: 1rem;
     font-size: 1.2rem;
     text-align: center;
-    color: #F8F9F7;
+    color: #f4f9fc;
     border-radius: 0.25rem;
-    background-color: #79789B;
+    background-color: #7f00e0;
+    text-decoration: none;
+
 }
 
 .button:hover {
-    background-color: #A29DBE;
-    color: #F8F9F7;
+    background-color: #748CDB;
+    color: #f4f9fc;
+    text-decoration: none;
+
 }
 
 .button:active {
