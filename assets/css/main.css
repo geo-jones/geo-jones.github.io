@@ -32,7 +32,7 @@ body {
 .top {
     background-color: black;
     background-size: 100% 100%;
-    min-height: 70%;
+    min-height: 100%;
     vertical-align: middle;
     display: flex;
     justify-content: center;
@@ -58,7 +58,8 @@ h1 {
     font-size: 3.2rem;
     color: #F8F9F7;
     font-weight: 600;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.1.2rem;
+    margin-bottom: 0rem;
 }
 
 .gallery h1 {
@@ -74,13 +75,13 @@ h1 {
     text-align: center;
     padding-bottom: 3rem;
     font-family: 'Bitter', serif;
+    text-transform: uppercase;
 
 }
 
 .top h2 {
     color: #F8F9F7;
-    font-family: 'Bitter', serif;
-
+    /* font-family: 'Bitter', serif; */
 }
 
 h3 {
