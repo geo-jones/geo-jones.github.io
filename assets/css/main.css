@@ -62,7 +62,7 @@ h1 {
 }
 
 .gallery h1 {
-    /* font-family: Bitter,serif; */
+    font-family: Bitter, serif;
     font-weight: 500;
     color: #1e90ff;
 }
@@ -73,10 +73,14 @@ h1 {
     font-size: 2rem;
     text-align: center;
     padding-bottom: 3rem;
+    font-family: 'Bitter', serif;
+
 }
 
 .top h2 {
     color: #F8F9F7;
+    font-family: 'Bitter', serif;
+
 }
 
 h3 {
@@ -240,7 +244,9 @@ a.icon {
 }
 
 .link-hover {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Bitter', serif;
+
 }
 
 .link-hover:hover {
