@@ -248,6 +248,7 @@ a.icon {
 .link-hover {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Bitter', serif;
+    line-height: 2rem;
 
 }
 
