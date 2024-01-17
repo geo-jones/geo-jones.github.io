@@ -233,9 +233,11 @@ a.icon {
 }
 
 .skills-border {
+    display: inline-block;
     color: #044317;
     background-color: #A7F0BA;
     border: 0;
+    margin-top: 0.3rem;
     padding: 0.4rem;
     font-size: 0.7rem;
     text-align: center;
