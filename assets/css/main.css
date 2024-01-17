@@ -18,7 +18,7 @@ body {
 
 /* Center website */
 .main {
-    /* max-width: 1800px; */
+    /* max-width: 1000px; */
     margin: auto;
 }
 
@@ -165,6 +165,15 @@ img {
     margin: 8px -16px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-content {
+    background-color: #F8F9F7;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -184,12 +193,6 @@ img {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Content */
-.gallery-content {
-    background-color: #F8F9F7;
-    padding: 10px;
 }
 
 /* iframe */
