@@ -74,6 +74,7 @@ body {
 }
 
 .top h3 {
+    text-transform: capitalize;
     letter-spacing: 0.05rem;
     text-shadow:
         0.03rem 0.03rem 0.25rem #262626,
@@ -166,6 +167,7 @@ img {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .gallery-content {
@@ -173,8 +175,8 @@ img {
     padding: 10px;
     justify-content: center;
     align-items: center;
-
 }
+
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
@@ -187,6 +189,15 @@ img {
     float: left;
     width: 50%;
 }
+
+.gallery-switch>.column {
+    /* flex-basis: 400px;
+    flex-shrink: 0; */
+    flex-direction: row-reverse;
+    float: right;
+
+}
+
 
 /* Clear floats after rows */
 .row:after {
@@ -242,11 +253,6 @@ a.icon {
 
 .icon>.label {
     display: none;
-}
-
-.awards {
-    margin-top: 1rem;
-    /* color: #4b4b4b; */
 }
 
 .skills-border {
