@@ -24,6 +24,7 @@ body {
 .main {
     /* max-width: 1000px; */
     margin: auto;
+    min-height: 100%;
 }
 
 .content {
@@ -116,7 +117,6 @@ body {
 .gallery .content {
     background-color: #F8F9F7;
     background-size: 100% 100%;
-    padding-top: none;
 }
 
 h1 {
