@@ -5,6 +5,10 @@
 #01257D
 #00FFFF */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
