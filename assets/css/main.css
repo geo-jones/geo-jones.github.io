@@ -28,14 +28,25 @@ body {
 }
 
 .content {
-    padding-left: min(15rem, 12%);
-    padding-right: min(15rem, 12%);
+    padding-left: min(20rem, 16%);
+    padding-right: min(20rem, 16%);
     padding-top: min(5rem, 4%);
     padding-bottom: min(5rem, 4%);
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+/* .gallery .content {
+    padding-left: min(50, 40%);
+    padding-right: min(50, 40%);
+} */
+
+/* @media screen and (max-width: 1200px) {
+    .content {
+        padding-left: min(15rem, 12%);
+        padding-right: min(15rem, 12%);
+    }
+} */
+
+@media screen and (max-width: 700px) {
     .content {
         padding-left: min(5rem, 4%);
         padding-right: min(5rem, 4%);
@@ -150,8 +161,10 @@ h2 {
 h3 {
     color: #1e90ff;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Bitter', serif;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 p,
@@ -162,6 +175,17 @@ ul {
     line-height: 1.5rem;
     /* font-family: 'Bitter', serif; */
     letter-spacing: 0.05rem;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery .content {
+    align-items: center;
+    justify-content: center;
+
 }
 
 .gallery .row {
@@ -176,7 +200,6 @@ ul {
     position: relative;
     text-align: center;
     border-radius: 0.25rem;
-    /* max-width: 95%; */
     margin-bottom: 2rem;
 }
 
@@ -195,7 +218,8 @@ ul {
     flex-direction: column;
     background-color: white;
     bottom: 0%;
-    padding-bottom: 20px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.9rem;
     border-radius: 0 0 0.25rem 0.25rem;
     width: 100%;
 }
@@ -256,7 +280,7 @@ a.icon {
     border: 0;
     margin-top: 0.3rem;
     padding: 0.4rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     text-align: center;
     border-radius: 2rem;
     text-decoration: none;
@@ -270,7 +294,7 @@ a.icon {
 }
 
 .icon.arrow {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-left: 0.4rem;
 }
 
