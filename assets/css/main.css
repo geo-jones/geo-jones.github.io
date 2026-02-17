@@ -231,7 +231,7 @@ iframe {
 @media screen and (max-width: 850px) {
     iframe {
         aspect-ratio: revert;
-        height: 95vh;
+        height: 75vh;
         width: 100%;
     }
 }
