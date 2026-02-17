@@ -38,7 +38,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    .content {
+    #projects {
         padding-left: min(5rem, 4%);
         padding-right: min(5rem, 4%);
     }
