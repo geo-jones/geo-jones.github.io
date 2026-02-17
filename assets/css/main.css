@@ -28,23 +28,15 @@ body {
 }
 
 .content {
-    padding-left: min(20rem, 16%);
-    padding-right: min(20rem, 16%);
-    padding-top: min(5rem, 4%);
-    padding-bottom: min(5rem, 4%);
+    padding: min(5rem, 4%);
+
 }
 
-/* .gallery .content {
-    padding-left: min(50, 40%);
-    padding-right: min(50, 40%);
-} */
-
-/* @media screen and (max-width: 1200px) {
-    .content {
-        padding-left: min(15rem, 12%);
-        padding-right: min(15rem, 12%);
-    }
-} */
+#about,
+#projects {
+    padding-left: min(20rem, 16%);
+    padding-right: min(20rem, 16%);
+}
 
 @media screen and (max-width: 700px) {
     .content {
@@ -233,6 +225,15 @@ iframe {
     border: none;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
+    max-height: 95vh;
+}
+
+@media screen and (max-width: 850px) {
+    iframe {
+        aspect-ratio: revert;
+        height: 95vh;
+        width: 100%;
+    }
 }
 
 iframe,
